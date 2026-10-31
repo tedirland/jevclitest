@@ -1,0 +1,206 @@
+Screen {
+    background: $background;
+}
+
+Footer {
+    background: $background;
+    color: $muted;
+}
+
+FooterKey {
+    background: $background;
+}
+
+FooterKey .footer-key--key {
+    background: $background;
+    color: $foreground;
+}
+
+FooterKey .footer-key--description {
+    background: $background;
+    color: $muted;
+}
+
+#masthead {
+    height: 1;
+    padding: 0 2;
+    margin-top: 1;
+}
+
+#bench {
+    height: 1fr;
+    padding: 1 2 0 2;
+}
+
+#summary {
+    width: 38%;
+    min-width: 32;
+    max-width: 56;
+    height: 100%;
+    padding: 0 3 0 0;
+    margin-right: 3;
+    border-right: solid $line;
+    overflow: hidden hidden;
+}
+
+#phase {
+    height: 1;
+    color: $muted;
+}
+
+#headline {
+    height: 3;
+    margin-top: 1;
+}
+
+#score {
+    width: auto;
+}
+
+#unit {
+    width: 1fr;
+    height: 3;
+    padding-left: 2;
+    content-align: left bottom;
+    color: $muted;
+}
+
+#tiles {
+    height: 1;
+    margin-top: 1;
+}
+
+#counts {
+    height: 1;
+    margin-top: 1;
+    color: $muted;
+}
+
+#facts {
+    height: 2;
+    margin-top: 1;
+}
+
+#reading {
+    height: 2;
+    margin-top: 1;
+}
+
+#question {
+    height: auto;
+    margin-top: 1;
+}
+
+#enlarged {
+    display: none;
+    width: 100%;
+    height: 1fr;
+    max-height: 12;
+    border: none;
+    padding: 0;
+    margin-top: 1;
+}
+
+Screen.-towering #enlarged {
+    display: block;
+}
+
+#strip {
+    height: 1;
+    dock: bottom;
+    margin-bottom: 1;
+}
+
+#sheet {
+    width: 1fr;
+    height: 100%;
+    grid-gutter: 0 2;
+}
+
+FrameView {
+    width: 100%;
+    height: 100%;
+    border: round $line;
+    border-title-color: $muted;
+    border-subtitle-color: $muted;
+    border-subtitle-align: right;
+}
+
+FrameView.selected {
+    border: round $muted;
+    border-title-color: $foreground;
+    border-subtitle-color: $foreground;
+}
+
+ProofScreen.single #enlarged,
+ProofScreen.single #strip,
+ProofScreen.single #reading,
+ProofScreen.single #tiles,
+ProofScreen.single #counts {
+    display: none;
+}
+
+#ask {
+    border: none;
+    border-top: solid $line;
+    height: 2;
+    padding: 0 2;
+    background: $background;
+}
+
+#ask:focus {
+    border: none;
+    border-top: solid $muted;
+    background: $background;
+}
+
+Screen.-short #question,
+Screen.-short #reading,
+Screen.-short #strip {
+    display: none;
+}
+
+Screen.-short #tiles,
+Screen.-short #counts,
+Screen.-short #facts {
+    margin-top: 0;
+}
+
+#welcome {
+    height: 1fr;
+    align: center middle;
+}
+
+#welcome Center {
+    height: auto;
+}
+
+#wordmark {
+    width: auto;
+}
+
+#tagline {
+    width: auto;
+    margin: 1 0 2 0;
+}
+
+#rolls {
+    width: 60;
+    max-width: 90%;
+    height: auto;
+    max-height: 10;
+    border: none;
+    background: $background;
+    scrollbar-size: 0 0;
+}
+
+#rolls:focus {
+    background-tint: $foreground 0%;
+}
+
+#rolls > .option-list--option-highlighted,
+#rolls > .option-list--option-hover {
+    background: $background;
+    color: $foreground;
+    text-style: none;
+}
